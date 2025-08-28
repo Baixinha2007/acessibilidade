@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #aa2aff;
- }
+    --laranja-claro: #ff2aed;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #550e47;
+    --alto-contraste-link: #690e6e;
+}
 
 body {
     font-size: 1rem;
@@ -11,9 +14,7 @@ body {
 }
 
 header {
-    background-color: #ffffff;
-    height: 400;
-    width: 400;
+    background-color: #ebe3f0;
 }
 
 
@@ -23,7 +24,7 @@ section {
 
 
 .nav-link {
-    color: #8c43cb;
+    color: #CB6D43;
     font-weight: 600;
 }
 
@@ -102,7 +103,7 @@ h2 {
 }
 
 #galeria {
-    background-color: #1d032f;
+    background-color: #FAF4F4;
 
 }
 
@@ -131,13 +132,13 @@ h2 {
 }
 
 .formulario button {
-    background-color: #9043cb;
+    background-color: #CB6D43;
     border: none;
     font-weight: bold;
 }
 
 .form-control {
-    background-color: #3e0b6e;
+    background-color: #F1EDEF;
 }
 .menu-acessibilidade{
     position: fixed;
@@ -145,6 +146,7 @@ h2 {
     right:20px;
     z-index: 1000;
 }
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
@@ -161,4 +163,38 @@ h2 {
 }
 .apresenta-lista{
     display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
 }
